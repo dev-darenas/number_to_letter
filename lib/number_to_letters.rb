@@ -9,7 +9,7 @@ class NumberToLetters
       when 0
         numer_convert += DecimalSystem.hundreds(digit)
       when 1
-        if digit.to_i == 1 && number[i+1].to_i <= 5
+        if digit.to_i == 1 && number[i+1].to_i <= 5 && number[i+1].to_i != 0
           numer_convert += DecimalSystem.ten(digit + number[i+1])
           break
         else
